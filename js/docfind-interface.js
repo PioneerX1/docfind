@@ -3,8 +3,9 @@ var DocFind = require('./../js/docfind.js').docFindModule;
 var getDoctorList = function(listing) {
   var doctorName = listing.profile.first_name + " " + listing.profile.last_name + ", " + listing.profile.title;
   var doctorBio = listing.profile.bio;
+  var healthgradesLink = "http://www.healthgrades.com/usearch?what=" + listing.profile.first_name + "%20" + listing.profile.last_name + "%2C%20" + listing.profile.title;
 
-  $('#doc-result').append('<div class="thumbnail">'+'<h4>'+doctorName+'</h4>'+'<p>'+doctorBio+'</p>'+'</div>');
+  $('#doc-result').append('<div class="thumbnail">'+'<a href="'+healthgradesLink+'" target="_blank">'+'<h4>'+doctorName+'</h4>'+'</a>'+'<div>'+'<img class="profile-pic" src="'+listing.profile.image_url+'">'+'</div>'+'<p>'+doctorBio+'</p>'+'</div>');
 };
 
 
