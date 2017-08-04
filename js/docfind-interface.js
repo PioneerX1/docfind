@@ -5,7 +5,7 @@ var getDoctorList = function(listing) {
   var doctorBio = listing.profile.bio;
   var healthgradesLink = "http://www.healthgrades.com/usearch?what=" + listing.profile.first_name + "%20" + listing.profile.last_name + "%2C%20" + listing.profile.title;
 
-  $('#doc-result').append('<div class="thumbnail">'+'<a href="'+healthgradesLink+'" target="_blank">'+'<h4>'+doctorName+'</h4>'+'</a>'+'<div>'+'<img class="profile-pic" src="'+listing.profile.image_url+'">'+'</div>'+'<p>'+doctorBio+'</p>'+'</div>');
+  $('#doc-result').append('<div class="thumbnail">'+'<div class="row">'+'<div class="col-sm-10">'+'<a href="'+healthgradesLink+'" target="_blank">'+'<h4>'+doctorName+'</h4>'+'</a>'+'<p>'+doctorBio+'</p>'+'</div>'+'<div class="col-sm-2">'+'<img class="profile-pic" height=100% width=100% src="'+listing.profile.image_url+'">'+'</div>'+'</div>'+'</div>');
 };
 
 
