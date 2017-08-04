@@ -12,7 +12,7 @@ DocFind.prototype.getDoctors = function(symptom, getDoctorList) {
   });
   }).fail(function(error) {
     console.log("Search failed");
-    // $('#fail').text(error.responseJSON.message);
+    $('#fail').text(error.responseJSON.message);
   });
 };
 
