@@ -14,8 +14,11 @@ To create the necessary databases, launch postgres, then psql, and run the follo
 
 * _Obtain your own API key from BetterDoctor.com_
 * _Open the DocFind folder, create a .env file with your key_
+* _For reference, the .env file was left off per the gitignore_
+* _The API key used for this project was 1bf8e95ed44fd44663222039019825c6_
 * _Download all necessary npm and bower dependencies_
 * _Run gulp build and then gulp serve to launch in a browser_
+
 
 ## Code Specs
 
